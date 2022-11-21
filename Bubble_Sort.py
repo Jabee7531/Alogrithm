@@ -1,9 +1,10 @@
 def bubble_sort(arr: list) -> list:
-    temp = 0
+    n = len(arr)
 
-    for x in range(len(arr)-1):
-        for y in range(len(arr)-x-1):
+    for x in range(n-1):
+        for y in range(n-1-x):
             if arr[y] > arr [y+1]:
+                # Swap
                 # temp = arr[y]
                 # arr[y] = arr[y+1]
                 # arr[y+1] = temp
@@ -12,7 +13,7 @@ def bubble_sort(arr: list) -> list:
     return arr
 
 if __name__ == "__main__":
-    arr = [7,5,3,1]
+    arr = [10, 5, 32, 49, 12, 13, 8, 27, 21, 17]
 
     result = bubble_sort(arr)
 
